@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registration-form" action="register.php" method="POST">
+    
+            <label for="name"><b>Full Name:</b></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob"><b>Date of Birth:</b> </label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address"><b>Address:</b></label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+
+            <label for="email"><b>Email ID:</b></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="aadhar"><b>Aadhar ID:</b></label>
+            <input type="text" id="aadhar" name="aadhar" pattern="[0-9]{12}" title="Please enter a valid 12-digit Aadhar ID" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
